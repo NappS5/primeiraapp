@@ -1,0 +1,30 @@
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+}
+
+.itens {
+    color: #fff;
+    cursor: pointer;
+}
+
+
+nav{
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    color: #fff;
+}
+li:hover {
+    color: #7a7373ae;
+}
