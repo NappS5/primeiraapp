@@ -1,41 +1,21 @@
 import './App.css';
-import React, {useEffect, useState} from 'react';
-import Button from './components/button/button.js';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/home/index.js';
+import Contato from './components/pages/contato/contato.js';
+import Fotos from './components/pages/fotos/fotos.js';
 
 function App(){
-  
-  
-  const [carregando, setCarregando] = useState(true)
-  const [contador, setContador] = useState(0)
-
-  useEffect(() => {
-    console.log('carregou');
-
-    return () => {
-      
-    }
-
-  }, [contador])
-
-  const alterarContador = (valor) => {
-    setContador(contador + valor);
-  };
 
   return (
     <>
-    <div>
-      {carregando? 
-      <span>Carregando..</span> 
-      :
-      <div>
-        <button onClick={() => setContador(contador + 1)}>Adicionar</button>
-        <span>{contador}</span>
-      <Button name='Alterar valor' active onClick={() => alterarContador(20)}/>
-      </div>
-      }
-      <button onClick={() => setCarregando(!carregando)}>{carregando ? 'carregar site' : 'voltar'}</button>
-    </div>
-  
+   <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/contato' element={<Contato />}></Route>
+        <Route path='/fotos' element={<Fotos />}></Route>
+      </Routes>
+   </BrowserRouter>
     </>
   );
 }

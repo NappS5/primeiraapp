@@ -1,12 +1,10 @@
 import React from 'react'
-import Profile from '../../profile/profile';
-import Header from '../../header/header';
+import Header from '../../../components/header/header';
 
 function Home() {
     return (
         <div>
             <Header />
-            <Profile />
         </div>
     )
 }
