@@ -1,0 +1,11 @@
+.header-list {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(21, 193, 206);
+    margin: 0;
+}
