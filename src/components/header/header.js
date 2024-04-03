@@ -1,21 +1,33 @@
-import React, { useContext } from 'react'
-import { UserContext } from '../../contexts/userContext';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import './header.css'
+import Logo from '../../assets/logo-batman.jpg';
+
 
 function Header(){
-    const [login, setLogin] = useContext(UserContext);
-
     return(
-        <div className='header-container'>
+        <header>
+            <img alt='logo' id='logo' src={Logo}/>
             <nav>
-                <ul className='itens'>
+                <ul>
+                    <Link to='/'>
                     <li>Home</li>
-                    <li>Fotos</li>
+                    </Link>
+
+                    <Link to ='/contato'>
                     <li>Contato</li>
-                    <li onClick={() => setLogin(!login)}>{login ? 'Deslogar' : 'Login'}</li>
+                    </Link>
+
+                    <Link to ='/fotos'>
+                    <li>Fotos</li>
+                    </Link>
+
+                    <Link to ='/comentarios'>
+                    <li>Comentários</li>
+                    </Link>
                 </ul>
             </nav>
-        </div>
+        </header>
     )
 }
 
