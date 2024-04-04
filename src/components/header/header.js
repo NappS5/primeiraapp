@@ -1,33 +1,33 @@
-import React, { useContext, useEffect } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
-import { UserContext } from '../../contexts/userContext';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import './header.css'
+import Logo from '../../assets/logo-batman.jpg';
+
 
 function Header(){
-    const {login, setLogin} = useContext(UserContext);
-    const navigate = useNavigate();
-
     return(
-        <div className='header-container'>
+        <header>
+            <img alt='logo' id='logo' src={Logo}/>
             <nav>
-                <ul className='itens'>
-
+                <ul>
                     <Link to='/'>
-                        <li>Home</li> 
+                    <li>Home</li>
                     </Link>
 
-                    <Link to='/fotos'>
-                        <li>Fotos</li>
+                    <Link to ='/contato'>
+                    <li>Contato</li>
                     </Link>
 
-                    <Link to='/contato'>
-                        <li>Contato</li>
+                    <Link to ='/fotos'>
+                    <li>Fotos</li>
                     </Link>
 
-                    <li onClick={() => navigate('contato')}>Login</li>
+                    <Link to ='/comentarios'>
+                    <li>Comentários</li>
+                    </Link>
                 </ul>
             </nav>
-        </div>
+        </header>
     )
 }
 

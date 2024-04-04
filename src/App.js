@@ -1,10 +1,10 @@
 import './App.css';
 import React from 'react';
-import Home from './pages/home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Contato from './pages/contato/contato';
-import Fotos from './pages/fotos/fotos';
-import Detalhes from './pages/detalhes/detalhes';
+import Home from './components/pages/home/index.js';
+import Contato from './components/pages/contato/contato.js';
+import Fotos from './components/pages/fotos/fotos.js';
+import Comentarios from './components/pages/comentarios/comentarios.js';
 
 function App(){
 
@@ -12,10 +12,10 @@ function App(){
     <>
    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/contato' element={<Contato />}/>
-        <Route path='/fotos' element={<Fotos />}/>
-        <Route path='/detalhes/:id' element={<Detalhes />}/>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/contato' element={<Contato />}></Route>
+        <Route path='/fotos' element={<Fotos />}></Route>
+        <Route path='/comentarios' element={<Comentarios />}></Route>
       </Routes>
    </BrowserRouter>
     </>
