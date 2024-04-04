@@ -1,18 +1,18 @@
 import React from 'react'
 import './footer.css'
 
-function Fotter(){
+function Footer(){
     return(
         <>
         <footer id='final'>
 
         <div id='footer_copyright'>
             ©
-            2023 Desenvolvido por Felipe Sander
+            2024 Desenvolvido por Felipe Sander
         </div>
         </footer>
         </>
     )
 }
 
-export default Fotter
+export default Footer
