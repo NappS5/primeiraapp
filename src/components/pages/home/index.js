@@ -4,6 +4,7 @@ import './styles.css'
 import Video from '../../../assets/video.mp4';
 import Cards from '../../cards/cards';
 import Footer from '../../footer/footer';
+import '../../responsive/responsive.css';
 
 function Home() {
     return (
@@ -29,10 +30,10 @@ function Home() {
         <Cards />
         <Footer />
 
-        desafios: 
+        {/* desafios: 
         criar o componente de footer 
         deixar responsivo
-        fazer as rotas das páginas criando as páginas de cada uma
+        fazer as rotas das páginas criando as páginas de cada uma */}
         </>
     )
 }

@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import './header.css'
 import Logo from '../../assets/logo-batman.jpg';
+import '../responsive/responsive.css';
+
 
 
 function Header(){
@@ -10,7 +12,7 @@ function Header(){
             <img alt='logo' id='logo' src={Logo}/>
             <nav>
                 <ul>
-                    <Link to='/'>
+                    <Link className='routes' to='/'>
                     <li>Home</li>
                     </Link>
 

@@ -5,11 +5,12 @@ function Footer(){
     return(
         <>
         <footer id='final'>
-
-        <div id='footer_copyright'>
-            ©
-            2024 Desenvolvido por Felipe Sander
-        </div>
+            <div className='footer-content'>
+            <div id='footer_copyright'>
+                ©
+                2024 Desenvolvido por Felipe Sander
+            </div>
+            </div>
         </footer>
         </>
     )

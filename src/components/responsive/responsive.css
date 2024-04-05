@@ -1,0 +1,72 @@
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 40%;
+    }
+
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 90px;
+    }
+
+    .trailer{
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        text-align: center;
+        width: 95%;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .button{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 80px;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+    .routes {
+        color: #fff;
+    }
+
+    li {
+        color: #fff;
+    }
+}
+
