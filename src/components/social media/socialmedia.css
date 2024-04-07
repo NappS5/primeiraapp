@@ -1,0 +1,51 @@
+.icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 25px;
+    height: 60px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outline-offset, outline-color, background-color;
+    transition-duration: .25s;
+}
+.icon:hover {
+    outline-offset: 4px;
+}
+.icon:hover i {
+    animation: shake .25s;
+}
+
+
+.icon--linkedin:hover {
+    background-color: #0077b5;
+    outline-color: #0077b5;
+}
+
+.icon--github:hover {
+    background-color: rgb(29, 3, 93);
+    outline-color:  rgb(29, 3, 93) ;
+}
+
+.icon--whatsapp:hover {
+    background-color: #00b50c;
+    outline-color: #00b50c;
+}
+
+@keyframes shake {
+    10%{transform: rotate(15deg);}
+    20%{transform: rotate(-15deg);}
+    30%{transform: rotate(15deg);}
+    40%{transform: rotate(-15deg);}
+}
